@@ -12,7 +12,7 @@ Error generating stack: `+e.message+`
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         .animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
         @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-        .animate-spin-slow { animation: spin-slow 40s linear infinite; transform-origin: center; transform-box: fill-box; }
+        .animate-spin-slow { animation: spin-slow 40s linear infinite; transform-origin: 0px 0px; }
         
         /* HARDCODED KEYFRAMES FOR PREVIEW STABILITY */
         @keyframes sword-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
@@ -22,15 +22,15 @@ Error generating stack: `+e.message+`
         .animate-float-ember { animation: float-ember 4s infinite linear; }
         
         @keyframes solar-flare { 0%, 100% { transform: scale(1); opacity: 0.15; } 50% { transform: scale(1.15); opacity: 0.35; } }
-        .animate-solar-flare { animation: solar-flare 6s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+        .animate-solar-flare { animation: solar-flare 6s ease-in-out infinite; transform-origin: 0px 0px; }
         
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
         .animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
         @keyframes spin-reverse { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
-        .animate-spin-reverse { animation: spin-reverse 25s linear infinite; transform-origin: center; transform-box: fill-box; }
+        .animate-spin-reverse { animation: spin-reverse 25s linear infinite; transform-origin: 0px 0px; }
         @media (min-width: 1024px) {
           .hero-astrolabe-container {
-            transform: translateY(60px);
+            transform: translateY(160px);
           }
         }
         
