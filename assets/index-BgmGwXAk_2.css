@@ -76,8 +76,8 @@
     width: 100% !important;
     height: auto !important;
     background: transparent !important;
-    margin-top: 150px !important;
-    transform: translateX(100px) !important;
+    margin-top: 300px !important;
+    transform: translate(80px, 50px) !important;
 }
 
 @media (max-width: 1024px) {
