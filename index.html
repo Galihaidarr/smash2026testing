@@ -11,37 +11,58 @@
   
 
 
-<style id="final-mobile-astrolabe">
+
+
+<style id="ultimate-mobile-fix">
+/* PARENT HERO CONTAINER FIX */
 @media (max-width: 1023px) {
-    .hero-astrolabe-container,
-    div.hero-astrolabe-container {
+    /* Target the main wrapper holding both columns */
+    .grid.lg\:grid-cols-12 {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+    }
+
+    /* Force text to top */
+    .order-1.lg\:order-1 {
+        order: 1 !important;
+        width: 100% !important;
+    }
+
+    /* ASTROLABE CONTAINER (NUKE ABSOLUTE) */
+    .hero-astrolabe-container {
+        order: 2 !important;
         position: relative !important;
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-        margin: 40px auto 0 auto !important;
         width: 100% !important;
         height: auto !important;
+        margin: 60px auto 0 auto !important;
+        padding: 0 !important;
+        top: auto !important;
         left: auto !important;
         right: auto !important;
         bottom: auto !important;
         transform: none !important;
-        padding: 0 !important;
+        align-self: center !important;
         overflow: visible !important;
-        pointer-events: none !important;
+        pointer-events: none !important; /* Allow scroll through */
     }
-    
-    .hero-astrolabe-svg,
-    svg.hero-astrolabe-svg {
+
+    /* MOBILE-SAFE DIMENSIONS */
+    .hero-astrolabe-svg {
         position: relative !important;
         display: block !important;
-        width: 280px !important;
-        height: 280px !important;
+        width: 300px !important;
+        height: 300px !important;
+        max-width: 100% !important;
         margin: 0 auto !important;
+        top: auto !important;
         left: auto !important;
         right: auto !important;
         bottom: auto !important;
-        top: auto !important;
         transform: none !important;
         pointer-events: none !important;
     }
