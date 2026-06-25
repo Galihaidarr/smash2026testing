@@ -29,23 +29,33 @@ Error generating stack: `+e.message+`
         @keyframes spin-reverse { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
         .animate-spin-reverse { animation: spin-reverse 25s linear infinite; }
         .hero-astrolabe-container {
-          transform: translateY(90px) !important;
+          padding-top: 100px !important;
           margin-top: 0px !important;
+          transform: none !important;
           position: relative !important;
           top: auto !important;
           display: flex !important;
-          align-items: center !important;
+          align-items: flex-start !important;
           justify-content: center !important;
+        }
+        .hero-astrolabe-container svg {
+          position: relative !important;
+          top: 40px !important;
         }
         @media (min-width: 1024px) {
           .hero-astrolabe-container {
-            transform: translateY(140px) !important;
+            padding-top: 160px !important;
             margin-top: 0px !important;
+            transform: none !important;
             position: relative !important;
             top: auto !important;
             display: flex !important;
-            align-items: center !important;
+            align-items: flex-start !important;
             justify-content: center !important;
+          }
+          .hero-astrolabe-container svg {
+            position: relative !important;
+            top: 40px !important;
           }
         }
         
