@@ -70,13 +70,21 @@
 /* STRUCTURAL RESET FOR HERO ASTROLABE */
 .hero-astrolabe-container {
     position: relative !important;
-    margin-top: 100px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     width: 100% !important;
     height: auto !important;
-    background: radial-gradient(circle, rgba(230, 140, 10, 0.35) 0%, rgba(210, 80, 0, 0.1) 40%, transparent 70%) !important;
+    background: transparent !important;
+    margin-top: 150px !important;
+    transform: translateX(100px) !important;
+}
+
+@media (max-width: 1024px) {
+    .hero-astrolabe-container {
+        margin-top: 50px !important;
+        transform: translateX(0px) !important;
+    }
 }
 
 .hero-astrolabe-svg {
@@ -86,6 +94,13 @@
     right: auto !important; 
     bottom: auto !important; 
     transform: none !important;
-    width: 450px !important; 
-    height: 450px !important;
+    width: 480px !important; 
+    height: 480px !important;
+}
+
+@media (max-width: 1024px) {
+    .hero-astrolabe-svg {
+        width: 300px !important; 
+        height: 300px !important;
+    }
 }
